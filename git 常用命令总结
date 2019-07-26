@@ -1,0 +1,6 @@
+git branch -vv  显示本地分支 和远程分支之间的关系 
+
+
+
+git push [远程地址]  [本地分支]:[远程分支]  eg： git push origin master:feature/p3 
+git diff [本地分支]  [远程服务器]/[远程分支]  eg  git diff  master origin/feature/p3  比较本地分支和远程分支的区别，push之前最好比较检查 

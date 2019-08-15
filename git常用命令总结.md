@@ -8,7 +8,7 @@ git diff [本地分支]  [远程服务器]/[远程分支]  eg  git diff  master 
 
 git branch --set-upstream-to=origin/<branch> master  设置本地分支master跟踪origin/<branch>远程分支
 
-git branch –set-upstream 本地新建分支名 origin/远程分支名
+git branch --set-upstream 本地新建分支名 origin/远程分支名
  
 git checkout [-f] [本地分支]  切换本地分支, -f 强制切换，忽略unmerge file 
 

@@ -13,6 +13,10 @@ git branch --set-upstream 本地新建分支名 origin/远程分支名
  
 git checkout [-f] [本地分支]  切换本地分支, -f 强制切换，忽略unmerge file 
 
+git remote update origin --prune     更新远程分支列表
+
+git remote update origin -p
+
 # 强制覆盖本地代码：
 $ git fetch --all
 

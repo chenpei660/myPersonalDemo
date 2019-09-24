@@ -12,6 +12,9 @@
     <br>curl -X POST --data "name=kk&name2=gg" 127.0.0.1:7001/api/material/create # 带参数的post提交
  <br> 2、 其他处理head、cookie 等见 https://www.cnblogs.com/sea24/articles/10108879.html 
  
+命令行执行http请求： 
+curl -H "Content-Type:application/json" -X POST -d '{"customerId":4,"orderNo":"61201909240029989202","queryOnlyOrder":false}' http://policy-anan-order-uat.pre.anan.net/order/queryOrderInfo
+ 
  #  测试ip的防火墙
  telnet [源ip]  [目的ip] [目的端口]
  

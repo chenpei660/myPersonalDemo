@@ -24,6 +24,11 @@ $ git reset --hard origin/master
 
 $ git pull
 
+# 分支合并比较
+$ git diff --stat-width=200 familyStructure origin/feature/p4  有差异的文件集合
+
+$ git merge 
+
 # 删除untrack files
 
  删除当前目录下untrack文件，不包括文件夹和.gitignore中指定的文件和文件夹

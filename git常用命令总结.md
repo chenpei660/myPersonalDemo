@@ -29,6 +29,17 @@ $ git diff --stat-width=200 familyStructure origin/feature/p4  有差异的文�
 
 $ git merge 
 
+# 合并分支特定目录 
+ git cherry-pick     
+20c2f506d789bb9f041050dc2c1e954fa3fb6910 
+2633961a16b0dda7b767b9264662223a2874dfa9 
+
+  git cherry-pick  -n    手动提交 
+20c2f506d789bb9f041050dc2c1e954fa3fb6910 
+2633961a16b0dda7b767b9264662223a2874dfa9
+
+ detail info ：  https://blog.csdn.net/jxianxu/article/details/79240158  
+
 # 删除untrack files
 
  删除当前目录下untrack文件，不包括文件夹和.gitignore中指定的文件和文件夹

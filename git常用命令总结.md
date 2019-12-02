@@ -18,16 +18,16 @@ git remote update origin --prune     更新远程分支列表
 git remote update origin -p    更新远程分支列表
 
 # 强制覆盖本地代码：
-$ git fetch --all
+ git fetch --all
 
-$ git reset --hard origin/master 
+ git reset --hard origin/master 
 
-$ git pull
+ git pull
 
 # 分支合并比较
-$ git diff --stat-width=200 familyStructure origin/feature/p4  有差异的文件集合
+ git diff --stat-width=200 familyStructure origin/feature/p4  有差异的文件集合
 
-$ git merge 
+ git merge 
 
 # 合并分支特定目录 
  git cherry-pick     
@@ -35,10 +35,23 @@ $ git merge
 2633961a16b0dda7b767b9264662223a2874dfa9 
 
   git cherry-pick  -n    手动提交 
-20c2f506d789bb9f041050dc2c1e954fa3fb6910 
-2633961a16b0dda7b767b9264662223a2874dfa9
+ 20c2f506d789bb9f041050dc2c1e954fa3fb6910 
+ 2633961a16b0dda7b767b9264662223a2874dfa9
 
  detail info ：  https://blog.csdn.net/jxianxu/article/details/79240158  
+ 
+ # 获取历史修改记录 
+ git log      获取历史所有的修改记录 
+ git log --pretty=oneline      单行显示历史所有记录 
+ git log <file-path>         指定文件的历史修改 
+ 
+ #  git show 查看提交的详情  
+ 
+  git show               查看最新的commit
+ 
+  git show commitId       查看指定commit hashID的所有修改 
+ 
+  git show commitId fileName   查看某次commit中具体某个文件的修改
 
 # 删除untrack files
 

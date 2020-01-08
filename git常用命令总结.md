@@ -74,3 +74,6 @@ git clean -nxfd
 git clean -nf
 
 git clean -nfd
+
+# git revert 
+git revert (--continue | --skip | --abort | --quit). 

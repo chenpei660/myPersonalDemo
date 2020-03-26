@@ -81,4 +81,9 @@ git clean -nf
 git clean -nfd
 
 # git revert 
-git revert (--continue | --skip | --abort | --quit). 
+git revert (--continue | --skip | --abort | --quit).
+
+# git merge 
+--no-commit
+
+--no-commit 参数使得合并后，为了防止合并失败并不自动提交，能够给使用者一个机会在提交前审视和修改合并结果。（这个使用后不会合并为一次commit）

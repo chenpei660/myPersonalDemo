@@ -80,6 +80,14 @@ git clean -nf
 
 git clean -nfd
 
+如果对于已修改的所有内容，我们都不想要了，想回到最干净的上个提交版本的状态。那么，3个命令就可以搞定一切： 
+
+   git reset
+
+   git checkout .
+
+   git clean -fdx
+
 # git revert 
 git revert (--continue | --skip | --abort | --quit).
 

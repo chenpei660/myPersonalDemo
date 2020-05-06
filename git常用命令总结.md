@@ -19,7 +19,9 @@ git remote update origin --prune     更新远程分支列表
 
 git remote update origin -p    更新远程分支列表
 
-git branch -m [原分支名] 新分支名
+git branch -m [原分支名] 新分支名 
+
+git branch 分支名   新建分支
 
 
 # 强制覆盖本地代码：

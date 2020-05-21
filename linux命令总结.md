@@ -1,7 +1,7 @@
 ## 常用Linux命令总结
 # 查找类 
-1、 在文件中查找关键字，并且展示上下10行  cat <filename> |grep '关键字'  -C 10 
-2、 当前目录文件查找关键字   grep -r '关键字' ./ 
+<br>1、 在文件中查找关键字，并且展示上下10行  cat <filename> |grep '关键字'  -C 10 
+<br>2、 当前目录文件查找关键字   grep -r '关键字' ./ 
 
 
 # 接口调试类
@@ -20,3 +20,7 @@ curl -H "Content-Type:application/json" -X POST -d '{"customerId":4,"orderNo":"6
  
  # 按照工具包 
  yum install telnet -y 
+ 
+ # xshell 常用命令方法
+<br>1、 输入sz 文件路径即下载该文件到本地收藏夹的下载目录。下载目录可配置 
+<br>2、 上传，在xshell上输入:rz -be，就会弹出本地文件选择框界面

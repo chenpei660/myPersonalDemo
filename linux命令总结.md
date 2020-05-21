@@ -24,3 +24,7 @@ curl -H "Content-Type:application/json" -X POST -d '{"customerId":4,"orderNo":"6
  # xshell 常用命令方法
 <br>1、 输入sz 文件路径即下载该文件到本地收藏夹的下载目录。下载目录可配置 
 <br>2、 上传，在xshell上输入:rz -be，就会弹出本地文件选择框界面
+<br>3、执行sh 文件  
+<br>   当前路径 ./脚本名    
+<br>   sh 完整路径及脚本名   
+<br>   sh 脚本名

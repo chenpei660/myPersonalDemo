@@ -28,3 +28,7 @@ curl -H "Content-Type:application/json" -X POST -d '{"customerId":4,"orderNo":"6
 <br>   当前路径 ./脚本名    
 <br>   sh 完整路径及脚本名   
 <br>   sh 脚本名
+
+# linux sudo chmod 
+https://www.cnblogs.com/shangzhijian/p/4730408.html
+

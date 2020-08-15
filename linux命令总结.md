@@ -30,5 +30,8 @@ curl -H "Content-Type:application/json" -X POST -d '{"customerId":4,"orderNo":"6
 <br>   sh 脚本名
 
 # linux sudo chmod 
-https://www.cnblogs.com/shangzhijian/p/4730408.html
+chmod abc file
+<br>其中a,b,c各为一个数字，分别表示User、Group、及Other的权限。
+<br>r=4，w=2，x=1
+<br>https://www.cnblogs.com/shangzhijian/p/4730408.html
 

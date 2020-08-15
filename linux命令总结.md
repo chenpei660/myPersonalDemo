@@ -35,3 +35,8 @@ chmod abc file
 <br>r=4，w=2，x=1
 <br>https://www.cnblogs.com/shangzhijian/p/4730408.html
 
+#  修改文件目录 owner  group
+chown -R file1 file2 
+<br>  -R  递归 
+<br> chgrp -R file1 file2
+<br> 

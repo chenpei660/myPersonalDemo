@@ -40,3 +40,8 @@ chown -R file1 file2
 <br>  -R  递归 
 <br> chgrp -R file1 file2
 <br> 
+
+#   Linux 按时间批量删除文件（删除N天前文件）  
+<br> find /home/lifeccp/dicom/studies -mtime +21 -name "*.*" -exec rm -Rf {} \;
+<br>  https://www.cnblogs.com/hurry-up/p/9777261.html  
+

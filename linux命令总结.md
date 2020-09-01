@@ -45,3 +45,6 @@ chown -R file1 file2
 <br> find /home/lifeccp/dicom/studies -mtime +21 -name "*.*" -exec rm -Rf {} \;
 <br>  https://www.cnblogs.com/hurry-up/p/9777261.html  
 
+#   清空文件夹
+<br>   rm -rf *
+

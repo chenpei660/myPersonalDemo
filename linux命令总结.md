@@ -48,3 +48,9 @@ chown -R file1 file2
 #   清空文件夹
 <br>   rm -rf *
 
+# 解压 文件 
+<br>  tar -xzvf file.tar.gz 
+<br>  tar –xvf file.tar  解压 tar包
+<br>  tar -xzvf azkaban-exec-server-0.1.0-SNAPSHOT.tar.gz
+<br>  tar -xzvf azkaban-web-server-0.1.0-SNAPSHOT.tar.gz  
+

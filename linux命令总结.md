@@ -40,6 +40,12 @@ chown -R file1 file2
 <br>  -R  递归 
 <br> chgrp -R file1 file2
 <br> 
+<br>chown -hR username:groupname ./目录名
+<br>其中：h表示对符号链接也起作用；
+<br>R表示对所有子文件也起作用；
+<br>后面的用户名和组名用冒号分割；
+<br>最后是要修改的目标文件夹；
+<br>如有疑惑，在终端 man chown
 
 #   Linux 按时间批量删除文件（删除N天前文件）  
 <br> find /home/lifeccp/dicom/studies -mtime +21 -name "*.*" -exec rm -Rf {} \;

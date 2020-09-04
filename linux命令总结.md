@@ -59,4 +59,8 @@ chown -R file1 file2
 <br>  tar –xvf file.tar  解压 tar包
 <br>  tar -xzvf azkaban-exec-server-0.1.0-SNAPSHOT.tar.gz
 <br>  tar -xzvf azkaban-web-server-0.1.0-SNAPSHOT.tar.gz  
+<br>  tar -zcvf renwolesshel.tar.gz /renwolesshel    打包成tar.gz格式压缩包
+
+
+
 

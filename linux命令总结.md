@@ -61,6 +61,11 @@ chown -R file1 file2
 <br>  tar -xzvf azkaban-web-server-0.1.0-SNAPSHOT.tar.gz  
 <br>  tar -zcvf renwolesshel.tar.gz /renwolesshel    打包成tar.gz格式压缩包
 
-
+# 批量替换文件内容
+<br>   替换每行第一次出现的字符串
+<br>   sed -i 's/查找的字符串/替换的字符串/' 文件
+ 
+<br>    替换文件中所有出现过的字符串
+<br>    sed -i 's/查找的字符串/替换的字符串/g' 文件
 
 

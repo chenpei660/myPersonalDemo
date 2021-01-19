@@ -69,3 +69,7 @@ chown -R file1 file2
 <br>    sed -i 's/查找的字符串/替换的字符串/g' 文件
 
 
+# Linux修改密码用
+<br> passwd 命令，用root用户运行passwd ，passwd user_name可以设置或修改任何用户的密码，普通用户运行passwd只能修改它自己的密码。
+
+

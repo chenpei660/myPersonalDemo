@@ -93,3 +93,10 @@ chkconfig --list | grep on    # 列出所有启动的系统服务
 ## 程序
 
 rpm -qa                # 查看所有安装的软件包
+
+## 文件编辑
+
+sed -i 就是直接对文本文件进行操作的。
+
+sed -i 's/原字符串/新字符串/' /home/1.txt
+sed -i 's/原字符串/新字符串/g' /home/1.txt

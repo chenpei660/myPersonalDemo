@@ -60,6 +60,10 @@ netstat -antp          # 查看所有已经建立的连接
 
 netstat -s             # 查看网络统计信息
 
+netstat -nat | grep -i "7090"   # 查看网络端口连接明细  
+
+netstat -nat | grep -i "7090" | grep "TIME_WAIT" | wc -l  # 查看网络端口 7090 状态 TIME_WAIT 的统计个数 
+
 ## 进程
 
 ps -ef                 # 查看所有进程

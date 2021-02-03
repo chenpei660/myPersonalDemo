@@ -108,3 +108,7 @@ sed -i 就是直接对文本文件进行操作的。
 
 sed -i 's/原字符串/新字符串/' /home/1.txt
 sed -i 's/原字符串/新字符串/g' /home/1.txt
+
+## 文件统计 
+
+cat access.log  | awk '{print $2,$3}' | sort | uniq -c    

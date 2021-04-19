@@ -64,6 +64,8 @@ netstat -nat | grep -i "7090"   # 查看网络端口连接明细
 
 netstat -nat | grep -i "7090" | grep "TIME_WAIT" | wc -l  # 查看网络端口 7090 状态 TIME_WAIT 的统计个数 
 
+netstat -an | grep 7090 | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'   # 查看端口 连接状态统计个数
+
 ## 进程
 
 ps -ef                 # 查看所有进程

@@ -97,3 +97,16 @@ git revert (--continue | --skip | --abort | --quit).
 --no-commit
 
 --no-commit 参数使得合并后，为了防止合并失败并不自动提交，能够给使用者一个机会在提交前审视和修改合并结果。（这个使用后不会合并为一次commit）
+
+# 将本地文件夹初始化为git仓库，并上传到对应的github远程仓库中
+git init
+
+git add .
+
+git commit -m "message info"
+
+git remote add origin {shh or http address}
+
+git remote -v
+
+git push -u origin master

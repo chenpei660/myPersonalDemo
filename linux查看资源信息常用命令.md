@@ -135,7 +135,7 @@ sed -i 's/原字符串/新字符串/g' /home/1.txt
 
 ## 文件统计 
 
-cat access.log  | awk '{print $2,$3}' | sort | uniq -c    
+cat access.log  | awk '{print $7,$9}' | sort | uniq -c    
 
 ## nginx 统计 
 awk {print $1}' access.log|sort | uniq -c |sort -n -k 1 -r| head -n 100 

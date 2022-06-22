@@ -1,4 +1,4 @@
-### 系统
+### 一 系统
 
  uname -a               # 查看内核/操作系统/CPU信息
  
@@ -16,7 +16,7 @@ lsmod                  # 列出加载的内核模块
 
 env                    # 查看环境变量
 
-## 资源
+## 二 资源
 
 
 free -m                # 查看内存使用量和交换区使用量
@@ -33,7 +33,7 @@ uptime                 # 查看系统运行时间、用户数、负载
 
 cat /proc/loadavg      # 查看系统负载
 
-## 磁盘和分区
+## 三 磁盘和分区
 
 
 mount | column -t      # 查看挂接的分区状态
@@ -46,7 +46,7 @@ hdparm -i /dev/hda     # 查看磁盘参数(仅适用于IDE设备)
 
 dmesg | grep IDE       # 查看启动时IDE设备检测状况
 
-## 网络
+## 四 网络
 
 ifconfig               # 查看所有网络接口的属性
 
@@ -65,6 +65,8 @@ netstat -nat | grep -i "7090"   # 查看网络端口连接明细
 netstat -nat | grep -i "7090" | grep "TIME_WAIT" | wc -l  # 查看网络端口 7090 状态 TIME_WAIT 的统计个数 
 
 netstat -an | grep 7090 | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'   # 查看端口 连接状态统计个数
+
+#### TCP 状态
 
 LISTEN：      侦听来自远方的TCP端口的连接请求
 
@@ -88,7 +90,7 @@ TIME-WAIT：   等待足够的时间以确保远程TCP接收到连接中断请�
 
 CLOSED：      没有任何连接状态
 
-## 进程
+## 五 进程
 
 ps -ef                 # 查看所有进程
 
@@ -102,7 +104,7 @@ ps aux | less
 
  x：显示无控制终端的进程
 
-## 用户
+## 六 用户
 
 w                      # 查看活动用户
 
@@ -116,26 +118,26 @@ cut -d: -f1 /etc/group    # 查看系统所有组
 
 crontab -l             # 查看当前用户的计划任务
 
-## 服务
+## 七 服务
 
 chkconfig --list       # 列出所有系统服务
 
 chkconfig --list | grep on    # 列出所有启动的系统服务
 
-## 程序
+## 八 程序
 
 rpm -qa                # 查看所有安装的软件包
 
-## 文件编辑
+## 九 文件编辑
 
 sed -i 就是直接对文本文件进行操作的。
 
 sed -i 's/原字符串/新字符串/' /home/1.txt
 sed -i 's/原字符串/新字符串/g' /home/1.txt
 
-## 文件统计 
+## 十 文件统计 
 
 cat access.log  | awk '{print $7,$9}' | sort | uniq -c    
 
-## nginx 统计 
+## 十一 nginx 统计 
 awk {print $1}' access.log|sort | uniq -c |sort -n -k 1 -r| head -n 100 

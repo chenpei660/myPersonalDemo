@@ -94,6 +94,8 @@ CLOSED：      没有任何连接状态
 
 ps -ef                 # 查看所有进程
 
+ps eww  pid            # 查看进程pid 的启动命令
+
 top                    # 实时显示进程状态
 
 ps aux | less

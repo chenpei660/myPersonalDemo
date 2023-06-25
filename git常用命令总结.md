@@ -110,3 +110,14 @@ git remote add origin {shh or http address}
 git remote -v
 
 git push -u origin master
+
+# 将多个commit 合并为一个
+git log 查看要合并的commit. 记住最早的commit号。
+
+git reset commit_number . 回退到此commit号。 ...
+
+git add . 将回退的的内容再次添加到暂存区
+
+git commit -m "comment" . 再次提交。
+
+git log 。

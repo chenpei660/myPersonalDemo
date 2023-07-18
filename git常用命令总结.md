@@ -121,3 +121,11 @@ git add . 将回退的的内容再次添加到暂存区
 git commit -m "comment" . 再次提交。
 
 git log 。
+
+# 将多个commit 合并为一个2 
+
+rebase为变基
+
+git rebase -i 命令可以压缩合并多次提交
+
+https://www.yii666.com/blog/372089.html

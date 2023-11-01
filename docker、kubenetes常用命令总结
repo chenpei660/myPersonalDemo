@@ -1,0 +1,39 @@
+ ################# docker 命令 
+ 容器调试无需容器保持运行
+ docker image ls 看到构造的镜像，
+ docker run -it <image-id> sh可以登录到容器shell环境，即使没有进程让容器保持运行（通常认为容器需要有一个进程让它保持运行，才能登录）
+ # 将主机目录挂载到容器目录下 
+ -v $(pwd)/datadir:/var/lib/mysql  
+
+eg ：
+docker run -it -v $(pwd)/etc:/opt/huawei/Bigdata/Bigdata/FusionInsight_Hetu_8.3.0/HSBroker/etc  8.5.225.12:5000/hetuengine-hsbroker:2.0.0   sh  
+ # 导入镜像 
+ docker load --input huaweijdk-17.0.6-euler-20230306.tar
+ # 构建镜像
+docker build -t 8.5.225.12:5000/hetuengine:2.0.0 .
+# 将镜像推到本地库
+docker push 8.5.225.12:5000/hetuengine:2.0.0
+# 删除容器 
+docker image rmi {imageid}
+# 查看容器 
+docker ps -a  
+# 删除某一个镜像id 所有的容器 
+docker ps -a | grep {imageid} | awk '{print $1}' | xargs docker rm -f 
+# 我们有了本地的镜像文件，在需要的时候可以使用docker load将本地保存的镜像再次导入docker中
+docker load --input rocketmq.tar 或 docker load < rocketmq.tar
+# 保存镜像 ##-o：指定保存的镜像的名字；rocketmq.tar：保存到本地的镜像名称；rocketmq：镜像名字，通过"docker images"查看
+docker save -o rocketmq.tar rocketmq 
+
+
+################ kubectl 命令 
+# 描述资源对象  
+kubectl describe pod kubernetes-dashboard-849cd79b75-s2snt --namespace kube-system
+# 查看pod 日志
+kubectl logs -f pods/monitoring-influxdb-fc8f8d5cd-dbs7d -n kube-system
+
+kubectl logs --tail 200 -f kube-apiserver -n kube-system |more
+
+kubectl logs --tail 200 -f podname -n jenkins
+
+# 进入pod
+kubectl exec -ti pod/hetuengine-hsconsole-on-k8s-c7c6fcc95-vbwqt -n uat /bin/bash
